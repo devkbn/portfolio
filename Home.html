@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Home</title>
+   
+<!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+
+<!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+        </head>
+    <body> 
+    
+<!-- header design -->
+        <header class="header">
+        <a href="Home.html" class="logo">KwakuPortfolio</a>
+    
+        <i class='bx bx-menu' id="menu-icon"></i>
+    
+        <nav class="navbar">
+                <a href="Home.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <a href="socialmedia.html">Social media</a>
+                <a href="Experience.html">Experience</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Units</button>
+                    <div class="dropdown-content">
+                        <a href="U1.html">U1</a>
+                  <a href="U2.html">U2</a>
+                  <a href="U3.html">U3</a>
+                  <a href="U9.html">U9</a>
+                  <a href="U11.html">U11</a>
+                  <a href="U12.html">U12</a>
+                  <a href="U13.html">U13</a>
+                  <a href="U14.html">U14</a>
+                    </div>
+                  </div>
+            </nav>
+        </header> 
+    
+<!--Home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+                <h1><span> Kwaku Nyamekye</span></h1>
+                <h3>And I'm a <span class="multiple-text"></span></h3>
+                <p>I have been studying programming and have developed a solid foundation in languages such as HTML, CSS, and JavaScript. I am passionate about the endless possibilities that programming offers and enjoy taking on new challenges. If you have any questions or would like to contact me, I am open and can be contacted via the contact page.</p>
+                <div class="social-media">
+                <a href="https://en-gb.facebook.com/"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://twitter.com/?lang=en"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="https://uk.linkedin.com/"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+        <a href="units.html" class="btn">Explore</a>
+        </div>
+
+
+        <div class="home-img">
+        <img src="images/laptop.gif" alt="">
+        </div>
+    </section>
+
+<!--footer design-->
+    <footer>
+        <div class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2023 by KwakuNyamekye | All Rights Reserved.</p>
+            </div>
+
+            <div class="footer-iconTop">
+                <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+            </div>
+    </footer>
+
+<!--custom js-->
+    <script src="js/script.js"></script>
+
+<!--scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+        ScrollReveal({
+        reset: true,
+        distance: '80px',
+        duration: 2000,
+        delay: 200
+        })
+
+        ScrollReveal().reveal('.home-content, .heading', { origin: 'top'});
+        ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom'});
+        ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left'});
+        ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right'});
+    </script>
+
+<!--typed js-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        const typed = new Typed('.multiple-text', {
+        strings: ['ICT Student', 'Video Editor', 'Graphic Designer', 'Web Developer', ],
+        typeSpeed: 80,
+        backSpeed: 80,
+        delaySpeed: 1000,
+        loop: true
+})
+    </script>
+
+        
+    </body>

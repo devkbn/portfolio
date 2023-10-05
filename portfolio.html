@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Projects</title>
+   
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   
+    <!-- header design -->
+    <header class="header">
+        <a href="Home.html" class="logo">KwakuPortfolio</a>
+    
+        <i class='bx bx-menu' id="menu-icon"></i>
+    
+        <nav class="navbar">
+            <a href="Home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html" class="active">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="socialmedia.html">Social media</a>
+            <a href="Experience.html">Experience</a>
+            <div class="dropdown">
+                <button class="dropbtn">Units</button>
+                <div class="dropdown-content">
+                    <a href="U1.html">U1</a>
+                  <a href="U2.html">U2</a>
+                  <a href="U3.html">U3</a>
+                  <a href="U9.html">U9</a>
+                  <a href="U11.html">U11</a>
+                  <a href="U12.html">U12</a>
+                  <a href="U13.html">U13</a>
+                  <a href="U14.html">U14</a>
+                </div>
+              </div>
+        </nav>
+    </header>
+
+<!-- portfolio section design -->
+<section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest<span>Projects</span></h2>
+
+    <div class="portfolio-container">
+        <div class="portfolio-box">
+            <video controls muted src="video/Y2Mate.is - You NEED This Software For Your StreamingRecording WEBCAM-B3yKAgMmD8Y-1080p-1658164370418.mp4" height="280"></video>
+            <div class="portfolio-layer">
+                <h4>Video Editing</h4>
+                <p>Experienced video editor adept at creating engaging visual content with a keen eye for detail.</p>
+                <a href="https://www.youtube.com/watch?v=B3yKAgMmD8Y"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <video controls autoplay muted src="video/Y2Mate.is - Should you UNINSTALL OBS Studio For This Software-HziWGBEEwVo-1080p-1655918219194.mp4" height="280">
+            <div class="portfolio-layer">
+                <h4>Video Editing</h4>
+                <p>Skilled video editor proficient in crafting visually compelling and engaging videos, leveraging creative techniques to captivate audiences across various platforms.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <video controls muted src="video/Y2Mate.is - Do YOU need a new microphone Shure MV7 is the Answer!-46PpreLtsZQ-1080p-1655738901064 (1).mp4" height="280"></video>
+            <div class="portfolio-layer">
+                <h4>Video Editing</h4>
+                <p>Talented video editor creating captivating visual content across platforms.</p>
+                <a href="https://www.youtube.com/watch?v=46PpreLtsZQ"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="images/prt6.PNG" alt="">
+            <div class="portfolio-layer">
+                <h4>Graphic Design</h4>
+                <p>Versatile graphic designer with a keen eye for detail, creating visually stunning designs across diverse platforms and mediums.</p>
+                <a href="https://www.youtube.com/watch?v=pJnNZrCMZ3I"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="images/prt9.PNG" alt="">
+            <div class="portfolio-layer">
+                <h4>Graphic Design</h4>
+                <p>Creative graphic designer with a strong eye for detail, delivering visually captivating designs across multiple mediums.</p>
+                <a href="https://www.youtube.com/watch?v=s8ShOOraWCs"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="images/prt8.PNG" alt="">
+            <div class="portfolio-layer">
+                <h4>Graphic Design</h4>
+                <p>Experienced graphic designer skilled in creating visually impactful designs across various mediums.</p>
+                <a href="https://www.youtube.com/watch?v=wYkapvMpXv0"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+    <!--footer design-->    
+    <div class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by KwakuNyamekye | All Rights Reserved.</p>
+    </div>
+
+    <div class="footer-iconTop">
+        <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+
+
+    <!--custom js-->
+        <script src="js/script.js"></script>
+
+    <!--scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+    ScrollReveal({
+    reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 200
+    })
+
+    ScrollReveal().reveal('.home-content, .heading', { origin: 'top'});
+    ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom'});
+    </script>
+
+</body>

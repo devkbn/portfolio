@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | About</title>
+   
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="Home.html" class="logo">KwakuPortfolio</a>
+    
+        <i class='bx bx-menu' id="menu-icon"></i>
+    
+        <nav class="navbar">
+            <a href="Home.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="socialmedia.html">Social media</a>
+            <a href="Experience.html">Experience</a>
+            <div class="dropdown">
+                <button class="dropbtn">Units</button>
+                <div class="dropdown-content">
+                  <a href="U1.html">U1</a>
+                  <a href="U2.html">U2</a>
+                  <a href="U3.html">U3</a>
+                  <a href="U9.html">U9</a>
+                  <a href="U11.html">U11</a>
+                  <a href="U12.html">U12</a>
+                  <a href="U13.html">U13</a>
+                  <a href="U14.html">U14</a>
+                </div>
+              </div>
+        </nav>
+    </header>
+
+<!-- about section design -->
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="images/KwakuPic.png" alt="">
+    </div>
+
+    <div class="about-content">
+    <h2 class="heading"> About<span>Me</span></h2>
+    <h3> Kwaku Nyamekye </h3>
+    <p> Hello and welcome to my website! My name is Kwaku and I am a 16-year-old boy who loves programming. Ever since I was young, I have been fascinated by the world of technology and how it can be used to solve real-world problems. 
+        As I grew older, I became more interested in coding and decided to pursue it as a hobby. I started by teaching myself the basics of programming and am now gradually working my way up to more advanced topics.</p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+</section>
+
+    <!--footer design-->
+    <div class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by KwakuNyamekye | All Rights Reserved.</p>
+    </div>
+
+    <div class="footer-iconTop">
+        <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+
+        <!--custom js-->
+        <script src="js/script.js"></script>
+
+        <!--scroll reveal-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <script>
+        ScrollReveal({
+        reset: true,
+        distance: '80px',
+        duration: 2000,
+        delay: 200
+        })
+
+        ScrollReveal().reveal('.home-content, .heading', { origin: 'top'});
+        ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom'});
+        ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left'});
+        ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right'});
+        </script>
+    
+</body>
+
+
+
